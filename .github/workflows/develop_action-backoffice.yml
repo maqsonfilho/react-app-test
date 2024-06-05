@@ -15,7 +15,7 @@ jobs:
 
       - name: Update Environment File
         run: |
-         (Get-Content .env) | ForEach-Object { $_ -replace 'VITE_BASE_URL=.*', 'VITE_BASE_URL="https://actionbackoffice-dev.azurewebsites.net"' } | Set-Content .env
+         (Get-Content .env) | ForEach-Object { $_ -replace 'VITE_BASE_URL=.*', 'VITE_BASE_URL="https://boasafra-test.azurewebsites.net"' } | Set-Content .env
         shell: pwsh
 
       - name: Set up Node.js version
